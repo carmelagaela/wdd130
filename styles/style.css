@@ -54,3 +54,35 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid cornsilk;
+    padding: 1rem;
+    background-color: powderblue;
+    color: black;
+}
+
+aside {
+    width: 20em;
+    text-align: center;
+}
+
+main img {
+    /* more about the author */
+    float: right;
+}
+
+aside h2 {
+    position: static;
+    top: 50px;
+    left: 150px;
+}
