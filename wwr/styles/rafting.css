@@ -37,3 +37,54 @@ body {
     margin: 0 auto; /* Center align content */
     padding: 20px; /* Add padding for content spacing */
 }
+
+.hero {
+    position: relative;
+    overflow: hidden; /* Ensures child elements do not overflow */
+  }
+  
+  .hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+.hero .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; /* Adjust as needed */
+    max-width: 600px; /* Adjust maximum width */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white; /* Text color */
+  }
+  
+  .hero h1 {
+    position: absolute;
+    top: 20px; /* Adjust top position */
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 2em; /* Adjust font size */
+  }
+  
+  .hero article {
+    position: absolute;
+    bottom: 20px; /* Adjust bottom position */
+    left: 0;
+    right: 0;
+    padding: 10px;
+  }
+
+  .hero article p {
+    margin-bottom: 10px; /* Adjust spacing between paragraphs */
+  }
+  
+  .hero article img {
+    float: right; /* Float image to the right */
+    margin-left: 10px; /* Adjust margin as needed */
+    max-width: 40%; /* Limit image width */
+    height: auto;
+  }
