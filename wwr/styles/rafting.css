@@ -1,0 +1,39 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jaro&display=swap');
+
+/* Define variables */
+:root {
+    --primary-color: #153B50;
+    --secondary-color: #15C5E0;
+    --accent-color: #ccf5ee;
+    --background-color: #ECEBE4;
+    --text-color: #333;
+}
+
+/* Headings and paragraphs */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Your Font Family', serif; /* Replace with imported font family */
+    color: var(--primary-color);
+}
+
+p {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none; /* Remove underlines from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover if desired */
+}
+
+/* Limit page width */
+body {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center align content */
+    padding: 20px; /* Add padding for content spacing */
+}
