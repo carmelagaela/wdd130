@@ -1,90 +1,123 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Jaro&display=swap');
 
-/* Define variables */
-:root {
-    --primary-color: #153B50;
-    --secondary-color: #15C5E0;
-    --accent-color: #ccf5ee;
-    --background-color: #ECEBE4;
-    --text-color: #333;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Headings and paragraphs */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Your Font Family', serif; /* Replace with imported font family */
-    color: var(--primary-color);
-}
-
-p {
-    color: var(--text-color);
-    line-height: 1.6;
-}
-
-/* Links */
-a {
-    color: var(--primary-color);
-    text-decoration: none; /* Remove underlines from links */
-}
-
-a:hover {
-    text-decoration: underline; /* Add underline on hover if desired */
-}
-
-/* Limit page width */
+/* Body styles */
 body {
-    max-width: 1200px; /* Adjust as needed */
-    margin: 0 auto; /* Center align content */
-    padding: 20px; /* Add padding for content spacing */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #153B50;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+}
+
+header img {
+    height: 60px; /* Adjust logo height as needed */
+    vertical-align: middle;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main styles */
+main {
+    padding: 20px;
 }
 
 .hero {
     position: relative;
-    overflow: hidden; /* Ensures child elements do not overflow */
-  }
-  
-  .hero img {
-    display: block;
+    overflow: hidden;
+    height: 400px; /* Adjust hero height as needed */
+}
+
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-  }
+    height: 100%;
+    object-fit: cover;
+}
 
 .hero .content {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%; /* Adjust as needed */
-    max-width: 600px; /* Adjust maximum width */
+    bottom: 20px;
+    left: 20px;
+    max-width: 400px;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    color: white; /* Text color */
-  }
-  
-  .hero h1 {
-    position: absolute;
-    top: 20px; /* Adjust top position */
-    left: 0;
-    right: 0;
-    text-align: center;
-    font-size: 2em; /* Adjust font size */
-  }
-  
-  .hero article {
-    position: absolute;
-    bottom: 20px; /* Adjust bottom position */
-    left: 0;
-    right: 0;
-    padding: 10px;
-  }
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
 
-  .hero article p {
-    margin-bottom: 10px; /* Adjust spacing between paragraphs */
-  }
-  
-  .hero article img {
-    float: right; /* Float image to the right */
-    margin-left: 10px; /* Adjust margin as needed */
-    max-width: 40%; /* Limit image width */
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+    text-align: center;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    max-width: 250px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.hero article p {
+    margin-bottom: 10px;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 10px;
+    max-width: 40%;
     height: auto;
-  }
+}
+
+/* Footer styles */
+footer {
+    background-color: #153B50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sociallinks {
+    margin-bottom: 10px;
+}
+
+.sociallinks a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.sociallinks img {
+    width: 30px; /* Adjust social media icon size */
+    height: auto;
+}
