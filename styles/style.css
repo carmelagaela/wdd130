@@ -3,10 +3,10 @@ main {
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
+    width: 20em;
+    margin: 1em;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
+    padding: 1em;
     background-color: #eeeeee;
     color: #333;
     text-align: center;
@@ -20,6 +20,16 @@ aside img {
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 1rem 1rem;
+}
+
+body {
+    font-size: 16px;
+    font-family: Roboto, Arial, sans-serif;
 }
 
 nav {
@@ -30,11 +40,12 @@ nav {
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 10px;
 }
 
 h1 {
     color: steelblue;
+    padding: .5rem;
 }
 
 img {
@@ -47,10 +58,11 @@ img {
 
 p {
     padding: 0;
+    margin: 1rem;
 }
 
 footer {
-    margin-top: 15px;
+    margin-top: 1em;
     border-top: 1px solid #000;
     text-align: center;
 }
@@ -59,6 +71,17 @@ footer {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+aside {
+    width: 20em;
+    text-align: center;
+}
+
+aside h2 {
+    position: static;
+    top: 50px;
+    left: 150px;
 }
 
 /* Class Selectors */
@@ -71,18 +94,6 @@ footer {
     color: black;
 }
 
-aside {
-    width: 20em;
-    text-align: center;
-}
-
-main img {
-    /* more about the author */
-    float: right;
-}
-
-aside h2 {
-    position: static;
-    top: 50px;
-    left: 150px;
+.indent {
+    padding-left: 2rem;
 }
