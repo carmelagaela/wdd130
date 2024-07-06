@@ -3,7 +3,8 @@ main {
 }
 
 aside {
-    width: 20em;
+    position: relative;
+    width: 36em;
     margin: 1em;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1em;
@@ -12,8 +13,14 @@ aside {
     text-align: center;
 }
 
+aside h2 {
+    position: absolute;
+    top: 25px;
+    left: 150px;
+}
+
 aside img {
-    width: 200px;
+    width: 300px;
     height: auto;
 }
 
@@ -71,17 +78,6 @@ footer {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-aside {
-    width: 20em;
-    text-align: center;
-}
-
-aside h2 {
-    position: static;
-    top: 50px;
-    left: 150px;
 }
 
 /* Class Selectors */
