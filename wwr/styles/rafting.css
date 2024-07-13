@@ -24,7 +24,6 @@ header {
     max-width: 1000px;
     background-color: #153B50;
     padding: 10px 20px;
-    text-align: center;
     color: white;
 }
 
@@ -81,6 +80,7 @@ nav a:hover {
     position: absolute;
     font-size: 3em;
     margin: 10px;
+    margin-bottom: 260px;
     left: 620px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.356);
@@ -98,7 +98,7 @@ nav a:hover {
     left: 20px;
     padding: 20px;
     text-align: left;
-    background-color: rgba(17, 151, 192, 0.329);
+    background-color: rgba(82, 97, 163, 0.329);
     color: white;
 }
 
@@ -120,7 +120,7 @@ nav a:hover {
 
 .history-text {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .history-image img {
@@ -147,10 +147,11 @@ figure img {
 }
 
 h2 {
-    position: absolute;
+    display: flex;
     text-align: center;
-    padding: 10px;
-    padding-bottom: 1000px;
+    padding: 1px;
+    padding-bottom: 1px;
+    margin: 1px;
 }
 
 figcaption {
