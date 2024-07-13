@@ -1,90 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
-
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
+/* Body styles */
 body {
-    font-family: Merriweather, Georgia, serif;
-    font-size: 1.2em;
-    color: #333;
-    background: #fff;
-}
-
-header {
-    margin: 0;
-    width: 650px;
-}
-
-h1 {
-    margin: 1rem;
-    font-size: 1.5em;
-    color: navy;
-    text-align: center;
-    display: grid;
-    justify-content: center;
-}
-
-form {
-    width: 650px;
-    margin: 0 auto;
-    padding: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 0.5rem;
-    background-color: #eee;
-    display: grid;
-}
-
-fieldset {
-    display: grid;
-    grid-gap: 5rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    align-content: normal;
-}
-
-label, input, button, select, textarea  {
     font-family: Roboto, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
 }
 
-label {
-    text-align: right;
-    padding-right: 1rem;
-}
-
-input, select, textarea {
-    padding: 0.5rem;
-    font-size: 1.1rem;
-}
-
-input [type="checkbox"] {
-    width: 10px;
-    height: 10px;
-    vertical-align: bottom;
-}
-
-button {
-    margin: 1rem;
-    background-color: navy;
-    color: #fff;
-    border: none;
-    border-radius: .5rem;
-    padding: .75rem;
-    font-size: 1.2rem;
-}
-
-button:hover {
-    background-color: green;
-}
-
-footer {
-    margin: 1rem auto 0;
-    width: 650px;
+/* Header styles */
+header {
     text-align: center;
-    font-size: 0.8em;
-    color: #777;
-    border-top: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Main styles */
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Form styles */
+form {
+    max-width: 100%;
+}
+
+/* Fieldset styles */
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+/* Question styles */
+.q1, .q2, .q3, .q4 {
+    margin-bottom: 15px;
+}
+
+.q1 label, .q2 label, .q3 label, .q4 label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button styles */
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
 }
