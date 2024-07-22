@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Your Company</title>
+    <meta name="description" content="Contact us for more information about our services. Our team is here to help you with any inquiries, reservations, or suggestions.">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Rafting Site logo">
+        <h1>Cagay River Rafting Site</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/trips">Trips</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Company Information Section -->
+        <section class="company-info">
+            <h2>Contact Information</h2>
+            <p><strong>Address:</strong> Corrales Ave, Cagayan de Oro, 9000 Misamis Oriental</p>
+            <p><strong>Phone:</strong> 0917 712 2442</p>
+            <p><strong>Email:</strong> rafting@cagayriver.com</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d586.602542949398!2d124.64898428574757!3d8.482280553638507!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1721635003005!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <!-- Employee Profiles Section -->
+        <section class="employee-profiles">
+            <h2>Our Team</h2>
+            <div class="profile">
+                <img src="images/employee1.jpg" alt="Employee 1">
+                <p>Carmela Gaela, CEO</p>
+            </div>
+            <div class="profile">
+                <img src="images/employee2.jpg" alt="Employee 2">
+                <p>Karla Jane Terando, Marketing Director</p>
+            </div>
+            <div class="profile">
+                <img src="images/employee3.jpg" alt="Employee 3">
+                <p>Jon Klint Badoga, Lead Guide</p>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="/submit-form" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label>Purpose of Message:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                </div>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <p>©️2024 🌊 Cagay Rafting Site 🌊 Carmela Gaela</p>
+        <nav>
+            <a href="https://facebook.com">
+                <img src="images/facebook.webp" alt="Facebook">
+            </a>
+            <a href="https://x.com">
+                <img src="images/twitter-x.webp" alt="Twitter X">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.webp" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
